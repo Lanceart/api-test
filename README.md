@@ -5,7 +5,7 @@ test
 First, run the development server:
 
 ```bash
-npm run dev
+npm runs dev
 # or
 yarn dev
 # or
