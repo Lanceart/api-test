@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    padding: 90px;
+}
+
+ .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.userListHeader, .userItem {
+    display: flex;
+    justify-content: space-between;
+}
+.columnHeader, .column {
+
+    padding: 10px;
+    text-align: left;
+}
+.listSection {
+    flex: 3; 
+}
+
+.detailSection {
+    padding: 20px;
+    flex: 1; 
+}
+.selected{
+    background-color: aqua;
+}
+
+.image{
+    position: relative;
+    top: -80px;
+    right: -350px;
+}
+
+.image_map{
+    position: relative;
+    
+    right: -200px;
+}
+/* 
+.userList {
+    
+    width: 100%;
+} */
