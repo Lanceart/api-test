@@ -26,14 +26,18 @@ And also I add more function, when you click one item in the list you gonna see 
 
 The page.js file serves as the central hub for all components, essentially functioning as the heart of our application. It's in this core file where we also handle fetching data from web APIs, ensuring a external data sources. To maintain a clean and organized codebase, I've partitioned each component into a components directory.
 
-Moreover, I've enriched the user experience with interactive functionalities. For instance, clicking on an item in the list triggers a display of detailed information on the right-hand side of the screen. This feature enhances user engagement by providing immediate access to additional data. Further adding to the intuitive nature of our interface, a second click on the same item cleverly makes the detailed information vanish.
+Moreover, I've enriched the user experience with interactive functionalities. For instance, clicking on an item in the list triggers a display of detailed information on the right-hand side of the screen. This feature enhances user engagement by providing immediate access to additional data. Further adding to the intuitive nature of our interface, a second click on the same item cleverly makes the detailed information vanish. And because I have too many coursework this week so I have to put it off on Sunday evening, so I use very limited time to finished this project.
 - Header
 ![Alt text](header.png)
 
 -UserList
+this is the unselected case
 ![Alt text](unselected.png)
+And this is the selected case
 ![Alt text](selected.png)
+
 -LoadingIndicator
+
 ![Alt text](Loading.png)
 
 - ErrorDisplay
