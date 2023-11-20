@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-test
+This is a test for Clearviction. Based on ReactJS and using NextJS as a tiny back-end for demo. Now let's see how it works.
+
+
+## See the demo online
+
+For your convience, I already deploy this project on the Vercel. And you may want to see my demo by click this [demo Link](https://api-test-alpha-eight.vercel.app/)
+
 ## Getting Started
 
-First, run the development server:
+If you want to deploy by yourself, you can do the following steps.
 
 ```bash
-npm runs dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/Lanceart/api-test.git
+# then go into the proejct
+npm install .
+# compile and run
+npm run dev
 
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## The details in my project
+The page.js is the Home for all the component, and the web API also fetched by here. I seperate all the components into the /componets
+And also I add more function, when you click one item in the list you gonna see the detail information in the right hand side. Also if you click it again it gonna disapear.
 
-## Learn More
+The page.js file serves as the central hub for all components, essentially functioning as the heart of our application. It's in this core file where we also handle fetching data from web APIs, ensuring a external data sources. To maintain a clean and organized codebase, I've partitioned each component into a components directory.
 
-To learn more about Next.js, take a look at the following resources:
+Moreover, I've enriched the user experience with interactive functionalities. For instance, clicking on an item in the list triggers a display of detailed information on the right-hand side of the screen. This feature enhances user engagement by providing immediate access to additional data. Further adding to the intuitive nature of our interface, a second click on the same item cleverly makes the detailed information vanish.
+- Header
+![Alt text](header.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-UserList
+![Alt text](unselected.png)
+![Alt text](selected.png)
+-LoadingIndicator
+![Alt text](Loading.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ErrorDisplay
 
-## Deploy on Vercel
+if you want to see if the ErrorDisplay works, you can do the following steps. First change the line of url in app/page.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```javascript
+const response = await fetch(`https://jsonplaceholder.typicode.com/users`);
+```
+Then refresh the page you gonna see the following page.
+![Alt text](error_image.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
